@@ -32,8 +32,6 @@ font pango:Cascadia Code 10
 
 # Gaps & Border
 gaps inner 15
-gaps top -10
-gaps outer 10
 default_border pixel 4
 
 # Window decoration
