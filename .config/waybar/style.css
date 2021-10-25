@@ -2,7 +2,7 @@
 
 * {
     border: none;
-    border-radius: 0;
+    border-radius: 0px;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "Cascadia Code", Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -35,7 +35,7 @@ window#waybar.chromium {
     background-color: #30374b;
     color: #ffffff;
     border-radius: 50px;
-    margin: 10px 0 10px 10px;
+    margin: 10px 0px 10px 10px;
 }
 
 #workspaces button:hover {
@@ -57,13 +57,13 @@ window#waybar.chromium {
     background-color: #30374b;
     color: #d6b692;
     font-size: 12px;
-    border-radius: 50;
+    border-radius: 50px;
 }
 
 #custom-powerctrl {
 	padding: 10px;
 	margin: 10px 10px 10px 5px;
-	border-radius: 50;
+	border-radius: 50px;
 	background-color: #30374b;
 	color: #d6b692;
 	font-size: 16px;
@@ -74,22 +74,22 @@ window#waybar.chromium {
 #custom-border-left {
 	background-color: #30374b;
 	padding: 6px;
-	margin: 10px 0 10px 0;
-	border-top-left-radius: 50;
-	border-bottom-left-radius: 50;
+	margin: 10px 0px 10px 0px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
 }
 
 #custom-border-right {
 	background-color: #30374b;
 	padding: 6px;
 	margin: 10px 10px 10px 0;
-	border-top-right-radius: 50;
-	border-bottom-right-radius: 50;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 
 #custom-spacing {
 	padding: 1px;
-	margin: 10px 0 10px 0;
+	margin: 10px 0px 10px 0px;
 	background-color: #30374b;
 }
 

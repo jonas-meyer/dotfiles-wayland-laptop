@@ -66,6 +66,7 @@ set $locker 'swaylock -f'
 exec {
     swaylock -f
     wmname LG3D
+    wlsunset -l 52.52 -L 13.405
 }
 ### Input configuration
 #

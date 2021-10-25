@@ -10,6 +10,7 @@ border-radius=5
 background-color=#232836
 text-color=#ffffff
 format=<b>%s</b> <span color="#d6b692">(%a)</span>\n%b
+default-timeout=15000
 
 # icons
 icon-path=/usr/share/icons/Papirus-Adapta-Nokto-Maia:/usr/share/icons/Papirus-Maia:/usr/share/icons/Papirus
