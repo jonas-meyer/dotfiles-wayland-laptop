@@ -46,7 +46,7 @@
         "format-ethernet": " {ipaddr}/{cidr}",
         "format-linked": " (No IP)",
         "format-disconnected": "Disconnected",
-        "format-alt": " {ipaddr}/{cidr}"
+        // "format-alt": " {ipaddr}/{cidr}"
     },
     
     // Volume

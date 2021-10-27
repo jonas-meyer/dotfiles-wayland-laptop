@@ -1,0 +1,10 @@
+set smooth-scroll "true"
+set font "Cascadia Code 10"
+
+set window-title-home-tilde "true"
+set statusbar-home-tilde "true"
+set guioptions "sc"
+set page-padding 5
+set selection-clipboard clipboard
+
+set adjust-open "width"
