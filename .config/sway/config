@@ -70,6 +70,7 @@ set $locker 'swaylock -f'
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec {
     swaylock -f
+    lxpolkit
     wmname LG3D
     wlsunset -l 52.52 -L 13.405
     udiskie
@@ -89,6 +90,7 @@ exec {
 	xkb_layout eu
 	xkb_options caps:swapescape
 }
+focus_follows_mouse no
 
 seat * hide_cursor when-typing enable
 #
@@ -100,8 +102,8 @@ bindsym --locked XF86MonBrightnessDown exec brightnessctl -e set 3%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl -e set +3%
 #
 ### Volume
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +3%
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -3%
 bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym --locked XF86AudioPlay exec playerctl play-pause
@@ -264,9 +266,5 @@ exec_always ~/.config/sway/scripts/import-gsettings.sh \
     cursor-theme:gtk-cursor-theme-name
 #
 set $gnome-schema org.gnome.desktop.interface
-
-
-
-
 
 include /etc/sway/config.d/*
