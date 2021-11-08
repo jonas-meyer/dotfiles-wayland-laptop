@@ -38,6 +38,7 @@ gaps right 5
 gaps bottom 5
 gaps inner 15
 default_border pixel 4
+smart_borders on
 
 # Window decoration
 # class                 border  backgr. text    indicator child_border
@@ -74,6 +75,7 @@ exec {
     wmname LG3D
     wlsunset -l 52.52 -L 13.405
     udiskie
+    exec wl-paste -t text --watch clipman store --no-persist
 }
 ### Input configuration
 #
