@@ -1,7 +1,7 @@
 clock
 screenshots
 
-indicator
+indicator-idle-visible
 indicator-radius=100
 indicator-thickness=7
 
@@ -15,6 +15,7 @@ ring-clear-color=47474747
 text-color=DADADABF
 key-hl-color=f5f5f547
 separator-color=47474747
+grace=5
 fade-in=0.1
 effect-scale=0.2
 font=Roboto Mono
