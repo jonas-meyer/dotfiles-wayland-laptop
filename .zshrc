@@ -73,7 +73,8 @@ ZSH_THEME="arrow"
 plugins=(
 git
 history-substring-search
-docker
+copyfile
+copydir
 )
 
 source $ZSH/oh-my-zsh.sh
