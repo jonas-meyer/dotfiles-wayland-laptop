@@ -19,6 +19,7 @@ EOF
         systemctl suspend
         ;;
     "Lock")
+        playerctl pause
         swaylock -f
         ;;
     "Log off")

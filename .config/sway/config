@@ -14,11 +14,15 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term footclient
+set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+#set $menu dmenu_path | dmenu | xargs swaymsg exec --
+for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
+set $menu exec $term --app-id=launcher -e sway-launcher-desktop
+bindsym $mod+d exec $menu
+
 
 ### Output configuration
 #
@@ -64,7 +68,8 @@ set $locker 'swaylock -C ~/.config/swaylock/sleepConfig'
           timeout 600 'swaymsg "output * dpms off"' \
 	  timeout 15 'if pgrep swaylock; then swaymsg "output * dpms off"; fi' \
           resume 'swaymsg "output * dpms on"' \
-          before-sleep $locker
+          before-sleep $locker \
+          before-sleep 'playerctl pause'
 
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -76,7 +81,8 @@ exec {
     wlsunset -l 52.52 -L 13.405
     udiskie
     wl-paste -t text --watch clipman store --no-persist
-    foot --server
+    ydotoold
+    gebaard -b
 }
 ### Input configuration
 #
@@ -127,7 +133,7 @@ bindsym $mod+x exec ~/.config/waybar/scripts/powerctrl.sh
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec wofi -S drun
+    # bindsym $mod+d exec wofi -S drun
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
