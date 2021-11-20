@@ -8,7 +8,7 @@
     // "width": 1280, // Waybar width
     "modules-left": ["sway/workspaces", "custom/spotify"],
     // "modules-center": ["sway/window"],
-    "modules-right": ["custom/border-left", "custom/pomo", "network",
+    "modules-right": ["custom/border-left", "network",
     "pulseaudio", "backlight", "battery", "clock", "idle_inhibitor", "custom/border-right", "custom/powerctrl"],
     
     // Workspaces
