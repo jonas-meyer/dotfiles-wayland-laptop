@@ -9,7 +9,7 @@
     "modules-left": ["sway/workspaces", "custom/spotify"],
     // "modules-center": ["sway/window"],
     "modules-right": ["custom/border-left","custom/weather",  "network",
-    "pulseaudio", "backlight", "battery", "clock", "idle_inhibitor", "custom/border-right", "custom/powerctrl"],
+    "memory", "pulseaudio", "backlight", "battery", "clock", "idle_inhibitor", "custom/border-right", "custom/powerctrl"],
     
     // Workspaces
     "sway/workspaces": {

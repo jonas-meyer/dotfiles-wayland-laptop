@@ -19,7 +19,7 @@ by Miguel Avila
 */
 
 :root {
-  --sfwindow: #30374b;
+  --sfwindow: #2e3440;
   --sfsecondary: #2e3440;
 }
 
@@ -136,6 +136,15 @@ by Miguel Avila
   background-color: var(--sfsecondary) !important;
   border: 1px solid rgba(0, 0, 0, 0) !important;
 }
+
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+  opacity: 0;
+  pointer-events: none;
+}
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
 
 #urlbar-container {
   margin-left: 0 !important;

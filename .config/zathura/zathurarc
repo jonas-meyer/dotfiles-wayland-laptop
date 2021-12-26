@@ -9,7 +9,7 @@ set selection-clipboard clipboard
 set adjust-open "height"
 
 set default-fg "#FFFFFF"
-set default-bg rgba(39,44,54,0.9)
+set default-bg rgba(39,44,54,1)
 set recolor-darkcolor "#FFFFFF"
 set recolor-lightcolor rgba(39,44,54,0.0)
 set recolor true
