@@ -35,9 +35,9 @@ font pango:Cascadia Code 10
 
 # Gaps & Border
 gaps top 0
-gaps left 5
-gaps right 5
-gaps bottom 5
+gaps left 0
+gaps right 0
+gaps bottom 0
 gaps inner 15
 default_border pixel 4 
 default_floating_border pixel none

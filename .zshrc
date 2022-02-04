@@ -109,6 +109,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export XDG_CURRENT_DESKTOP=unity
 export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME=qt5ct
+export VISUAL="vim"
+export EDITOR="$VISUAL"
 DEFAULT_USER=$USER
 
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
