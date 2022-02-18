@@ -43,6 +43,7 @@ default_border pixel 4
 default_floating_border pixel none
 for_window [title="^.*"] title_format " "
 smart_borders on
+smart_gaps on
 
 #border_images.focused ~/.config/sway/borders/rshadows.png
 #border_images.focused_inactive ~/.config/sway/borders/rshadows.png
@@ -95,6 +96,7 @@ exec {
     wlsunset -l 52.52 -L 13.405
     udiskie
     fnott
+    playerctld daemon
     wl-paste -t text --watch clipman store --no-persist
     wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
     ydotoold
