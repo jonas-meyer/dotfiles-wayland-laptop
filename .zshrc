@@ -74,7 +74,7 @@ plugins=(
 git
 history-substring-search
 copyfile
-copydir
+copypath
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,3 +116,4 @@ DEFAULT_USER=$USER
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
 	  exec sway
 fi
+export PATH=$PATH:$HOME/.local/bin
