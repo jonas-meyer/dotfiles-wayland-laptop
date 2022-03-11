@@ -55,6 +55,7 @@ window#waybar.chromium {
 .custom-spotify {
     padding: 10px;
     margin: 10px 0 10px 15px;
+    border-radius: 50px;
     background-color: #30374b;
     color: #d6b692;
     font-size: 12px;
@@ -121,7 +122,8 @@ window#waybar.chromium {
 #language,
 #keyboard-state,
 #custom-pomo,
-#custom-weather
+#custom-weather,
+#custom-spotify
 {
     padding: 10px;
     margin: 10px 0 10px 0;

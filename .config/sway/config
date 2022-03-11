@@ -300,3 +300,4 @@ exec_always ~/.config/sway/scripts/import-gsettings.sh \
 set $gnome-schema org.gnome.desktop.interface
 
 include /etc/sway/config.d/*
+include ~/.config/sway/*

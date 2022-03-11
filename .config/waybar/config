@@ -7,7 +7,7 @@
     //"height": 15, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "ipc": true,
-    "modules-left": ["sway/workspaces", "custom/spotify"],
+    "modules-left": ["sway/workspaces", "custom/border-left", "custom/spotify", "custom/border-right"],
     //"modules-center": ["sway/window"],
     "modules-right": ["custom/border-left","custom/weather",  "network", "cpu",
     "memory", "pulseaudio", "backlight", "battery", "clock", "idle_inhibitor", "custom/border-right", "custom/powerctrl"],
@@ -35,7 +35,7 @@
      
      // Spotify
 	"custom/spotify": {
-		"exec": "~/.config/waybar/scripts/mediaplayer.sh --player spotify",
+		"exec": "~/.config/waybar/scripts/mediaplayer.sh --player firefox",
 		"format": " {}",
 		"return-type": "json",
 		"on-click": "playerctl play-pause",
